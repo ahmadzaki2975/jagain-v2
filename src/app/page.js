@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,6 +19,10 @@ export default function Home() {
 
       <section className="flex text-center min-h-screen z-[1] leading-[125%] text-blue-primary font-montserrat text-[60px] font-bold flex-col justify-center items-center">
         <p>Easily manage <br /> <span className="text-grey-primary">your</span> personal finances</p>
+        <div className="flex gap-8 mt-10">
+          <Button text="Sign In" variant="secondary" classname="px-10 py-4" />
+          <Button text="Register" variant="primary" classname="px-10 py-4" />
+        </div>
       </section>
     </main>
   );
