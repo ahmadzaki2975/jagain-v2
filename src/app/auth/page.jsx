@@ -34,6 +34,11 @@ export default function AuthPage() {
             type="text"
             className="//bg-red-500 py-1 border-b-[#D7D7D7] border-b-[.5px] focus:border-b-[#15181b]/90 !outline-none"
           />
+          <label className="mt-5" htmlFor="email">Password</label>
+          <input
+            type="text"
+            className="//bg-red-500 py-1 border-b-[#D7D7D7] border-b-[.5px] focus:border-b-[#15181b]/90 !outline-none"
+          />
           <button
             type="submit"
             className="bg-blue-primary w-fit px-4 self-end text-white font-semibold rounded-[8px] py-2 mt-5"
