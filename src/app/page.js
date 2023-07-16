@@ -1,8 +1,12 @@
+'use client'
+
 import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <main className="min-h-screen pb-10">
       <nav className="flex z-[2] w-full justify-between items-center px-[100px] py-4 font-montserrat border-b-[.7px] border-[#D0D0D0]">
@@ -14,8 +18,8 @@ export default function Home() {
         </div>
 
         <div className="flex gap-5 font-semibold text-grey-primary">
-          <Link href="#">About Us</Link>
-          <Link href="#">Help & Support</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/help">Help & Support</Link>
         </div>
       </nav>
 
@@ -25,7 +29,7 @@ export default function Home() {
           personal finances
         </p>
         <div className="flex gap-8 mt-10">
-          <Button text="Sign In" variant="secondary" classname="px-10 py-4" />
+          <Button text="Sign In" variant="secondary" classname="px-10 py-4" onClick={() => router.push("/auth")} />
           <Button text="Register" variant="primary" classname="px-10 py-4" />
         </div>
         <div className="grid grid-cols-4 w-fit mx-auto gap-10 mt-[100px]">
