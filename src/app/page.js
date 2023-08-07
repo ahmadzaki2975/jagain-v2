@@ -8,16 +8,16 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   return (
-    <main className="min-h-screen pb-10">
-      <nav className="flex z-[2] w-full justify-between items-center px-[100px] py-4 font-montserrat border-b-[.7px] border-[#D0D0D0]">
+    <main className="min-h-screen pb-20">
+      <nav className="flex z-[2] w-full justify-between items-center px-[20px] sm:px-[100px] py-4 font-montserrat border-b-[.7px] border-[#D0D0D0]">
         <div className="flex items-center gap-3">
           <Image src="/Logo.png" width={29} height={60} />
-          <h1 className="font-semibold text-blue-secondary text-[32px]">
+          <h1 className="font-semibold text-blue-secondary text-[25px] md:text-[32px]">
             Jagain!
           </h1>
         </div>
 
-        <div className="flex gap-5 font-semibold text-grey-primary">
+        <div className="hidden sm:flex gap-5 font-semibold text-grey-primary">
           <Link href="/about-us">About Us</Link>
           <Link href="/help">Help & Support</Link>
         </div>
@@ -28,11 +28,11 @@ export default function Home() {
           Easily manage <br /> <span className="text-grey-primary">your</span>{" "}
           personal finances
         </p>
-        <div className="flex gap-8 mt-10">
+        <div className="flex flex-col xs:flex-row gap-4 sm:gap-8 mt-10">
           <Button text="Sign In" variant="secondary" classname="px-10 py-4" onClick={() => router.push("/auth")} />
           <Button text="Register" variant="primary" classname="px-10 py-4" />
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 w-fit mx-auto gap-5 lg:gap-10 mt-[100px]">
+        <div className="lg:px-5 max-w-[1000px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-fit mx-auto gap-5 lg:gap-10 mt-[100px]">
           <div className="bg-blue-primary/20 grid place-items-center text-[16px] md:text-[18px] text-grey-primary font-semibold px-[15px] py-[10px] rounded-[11px] w-[230px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             pharetra sem sit amet
