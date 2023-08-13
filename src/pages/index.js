@@ -29,7 +29,7 @@ export default function Home() {
           personal finances
         </p>
         <div className="flex flex-col xs:flex-row gap-4 sm:gap-8 mt-10">
-          <Button text="Sign In" variant="secondary" classname="px-10 py-4" onClick={() => router.push("/auth")} />
+          <Button text="Sign In" variant="secondary" classname="px-10 py-4" onClick={() => router.push("/auth/login")} />
           <Button text="Register" variant="primary" classname="px-10 py-4" />
         </div>
         <div className="lg:px-5 max-w-[1000px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-fit mx-auto gap-5 lg:gap-10 mt-[100px]">
