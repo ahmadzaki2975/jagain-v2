@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function LoginPage() {
   return (
-    <main className="min-h-screen py-10 lg:py-0 font-montserrat flex flex-col gap-10 lg:gap-0 lg:flex-row justify-center items-center px-[5%] py-[5%]">
+    <main className="min-h-screen py-10 lg:py-0 font-montserrat flex flex-col gap-10 lg:gap-0 lg:flex-row justify-center items-center px-[5%]">
       <section className="grid w-[90%] xs:w-[80%] max-w-[600px] 2xl:max-w-[800px] lg:w-1/2 place-items-center">
         <div className="flex gap-4 ">
           <img src="/Logo.png" alt="Logo" className="w-[42px] h-[97px]" />
