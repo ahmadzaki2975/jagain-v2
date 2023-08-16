@@ -18,8 +18,10 @@ export default function LoginPage() {
       </section>
 
       <section className="w-[90%] xs:w-[70%] lg:w-1/2 max-w-[600px] 2xl:max-w-[700px] h-fit text-grey-primary shadow-[0_0_25px_#E0E9FF] p-8 rounded-[15px]">
-        <h1 className="font-semibold text-[35px]">Sign In</h1>
-        <p className="font-semibold">
+        <h1 className="font-semibold text-[35px]">{
+          email == "" ? "Sign In" : "Enter your password"
+        }</h1>
+        <p className={"font-semibold" + (email==""? " block" : " hidden")}>
           New user?{" "}
           <Link href="/register" className="text-blue-primary">
             Register an account
