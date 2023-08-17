@@ -17,10 +17,17 @@ export default function LoginPage() {
         </div>
       </section>
 
-      <section className="w-[90%] xs:w-[70%] lg:w-1/2 max-w-[600px] 2xl:max-w-[700px] h-fit text-grey-primary shadow-[0_0_25px_#E0E9FF] p-8 rounded-[15px]">
+      <section className="w-[90%] xs:w-[70%] lg:w-1/2 max-w-[600px] 2xl:max-w-[700px] h-[90vh] pt-10 pb-20 text-grey-primary shadow-[0_0_25px_#E0E9FF] p-8 rounded-[15px]">
         <h1 className="font-semibold text-[35px]">{
           email == "" ? "Sign In" : "Enter your password"
         }</h1>
+        <div className={"flex items-center gap-3 mt-3" + (email != '' ? " block" : " hidden")}>
+          <div className="w-[68px] rounded-full aspect-square bg-red-500" />
+          <div>
+            <h1 className="text-grey-primary font-semibold">{email}</h1>
+            <p>Personal account</p>
+          </div>
+        </div>
         <p className={"font-semibold" + (email==""? " block" : " hidden")}>
           New user?{" "}
           <Link href="/register" className="text-blue-primary">
