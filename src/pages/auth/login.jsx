@@ -50,7 +50,7 @@ export default function LoginPage() {
             }
           }}
         >
-          <label className={email != "" ? " hidden" : " block"} htmlFor="email">
+          <label className={email != "" ? " hidden" : " block font-semibold"} htmlFor="email">
             Email Address
           </label>
           <input
@@ -64,7 +64,7 @@ export default function LoginPage() {
               setEmailValue(e.target.value);
             }}
           />
-          <label className={email == "" ? " hidden" : " block"} htmlFor="email">
+          <label className={email == "" ? " hidden" : " block font-semibold"} htmlFor="email">
             Password
           </label>
           <input
