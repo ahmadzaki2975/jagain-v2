@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -18,9 +19,7 @@ export default function LoginPage() {
       </section>
 
       <section className="w-[90%] xs:w-[70%] lg:w-1/2 max-w-[600px] 2xl:max-w-[700px] h-[90vh] overflow-y-scroll pt-10 pb-20 text-grey-primary shadow-[0_0_25px_#E0E9FF] p-8 rounded-[15px]">
-        <h1 className="font-semibold text-[35px]">
-          Register your account
-        </h1>
+        <h1 className="font-semibold text-[35px]">Register your account</h1>
         {/* <p className={"font-semibold" + (email == "" ? " block" : " hidden")}>
           New user?{" "}
           <Link href="/register" className="text-blue-primary">
@@ -83,8 +82,8 @@ export default function LoginPage() {
           Or
           <div className="w-full h-[.5px] bg-[#D7D7D7]"></div>
         </div>
-        <div className="py-3 unselectable hover:bg-[#D7D7D7]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
-          Continue With Google
+        <div className="flex gap-[10px] items-center justify-center py-3 unselectable hover:bg-[#D7D7D7]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
+          <FcGoogle size={22} /> Continue With Google
         </div>
       </section>
     </main>
