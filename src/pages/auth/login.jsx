@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { FcGoogle } from "react-icons/fc";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
@@ -86,8 +87,8 @@ export default function LoginPage() {
           Or
           <div className="w-full h-[.5px] bg-[#D7D7D7]"></div>
         </div>
-        <div className="py-3 unselectable hover:bg-[#D7D7D7]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
-          Continue With Google
+        <div className="flex gap-[10px] items-center justify-center py-3 unselectable hover:bg-[#D7D7D7]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
+          <FcGoogle size={22} /> Continue With Google
         </div>
         <Link href="#" className="block mt-10 text-blue-primary font-semibold">
           Need help?
