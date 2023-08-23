@@ -31,7 +31,7 @@ export default function LoginPage() {
         </div>
         <p className={"font-semibold" + (email==""? " block" : " hidden")}>
           New user?{" "}
-          <Link href="/register" className="text-blue-primary">
+          <Link href="/auth/register" className="text-blue-primary">
             Register an account
           </Link>
         </p>
@@ -87,7 +87,7 @@ export default function LoginPage() {
           Or
           <div className="w-full h-[.5px] bg-[#D7D7D7]"></div>
         </div>
-        <div className="flex gap-[10px] items-center justify-center py-3 unselectable hover:bg-[#D7D7D7]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
+        <div className="flex gap-[10px] items-center justify-center py-3 unselectable transition hover:bg-[#DDDDDD]/60 w-full cursor-pointer text-center mt-5 rounded-[9px] border-[.5px] border-solid border-[#D7D7D7]">
           <FcGoogle size={22} /> Continue With Google
         </div>
         <Link href="#" className="block mt-10 text-blue-primary font-semibold">
