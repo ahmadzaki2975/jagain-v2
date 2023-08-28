@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "../../../public/Logo.png";
 
 export default function Dashboard() {
+  const sectionClass = "bg-[#F5F9FF] p-20 rounded-[10px]"
   return (
     <main className="font-montserrat">
       <nav className="border-b-[0.7px] border-b-[#D0D0D0] px-[20px] sm:px-[50px] lg:px-[100px] py-4 flex justify-between items-center">
@@ -19,6 +20,10 @@ export default function Dashboard() {
           </div>
         </div>
       </nav>
+
+      <main className="p-20">
+      <section className={sectionClass}></section>
+      </main>
     </main>
   );
 }
