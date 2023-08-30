@@ -4,7 +4,7 @@ import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
 import { useState } from "react";
 
 export default function Dashboard() {
-  const sectionClass = "bg-[#F5F9FF] p-20 rounded-[10px]";
+  const sectionClass = "bg-[#F5F9FF] p-20 rounded-[10px] p-6";
   const months = [
     "Jan",
     "Feb",
@@ -22,7 +22,7 @@ export default function Dashboard() {
   const [activeMonth, setActiveMonth] = useState(0);
   return (
     <main className="font-montserrat">
-      <nav className="border-b-[0.7px] border-b-[#D0D0D0] px-[20px] sm:px-[50px] lg:px-[100px] py-4 flex justify-between items-center">
+      <nav className="border-b-[0.7px] text-[#2B2B2B] border-b-[#D0D0D0] px-[20px] sm:px-[50px] lg:px-[100px] py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <Image src={Logo} alt="Logo" className="w-[30px]" />
           <h1 className="text-[32px] font-semibold text-blue-secondary">
@@ -54,7 +54,11 @@ export default function Dashboard() {
             setActiveMonth(activeMonth + 1)
           }}/>
         </section>
-        <section className={sectionClass}></section>
+        <section className={sectionClass}>
+          <h1 className="text-[21px] font-semibold">Monthly Balance</h1>
+          <hr className="h-[1px] bg-[#D7D7D7] w-full my-5" />
+          <h2 className="text-[44px] font-semibold">Rp 14.456.000</h2>
+        </section>
         <section className={sectionClass}></section>
       </main>
     </main>
